@@ -1,0 +1,16 @@
+.preloader {
+  width: 220px;
+  background: #005fd5;
+  height: 270px;
+  color: white;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+  margin-bottom: 30px;
+  p {
+    margin: 0;
+  }
+}
+

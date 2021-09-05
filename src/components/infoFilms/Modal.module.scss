@@ -1,0 +1,39 @@
+.movieInfo {
+  width: 1000px;
+  margin: auto;
+  margin-top: 50px;
+  color: white;
+
+  .movieMain {
+    display: flex;
+
+    .poster {
+      width: 400px;
+      border-radius: 5px;
+    }
+
+    .mainInfo {
+      flex: 1;
+      padding-left: 50px;
+      h2 {
+        color: white;
+        font-weight: lighter;
+        text-transform: uppercase;
+        text-align: center;
+        margin: 0;
+      }
+
+      .genres {
+
+      }
+    }
+  }
+}
+
+.preloader {
+  display: flex;
+  align-items: center;
+  height: 60vh;
+  width: 100%;
+  justify-content: center;
+}

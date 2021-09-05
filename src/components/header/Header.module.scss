@@ -1,0 +1,26 @@
+.header {
+  width: 100%;
+  background-color: #1b1e21;
+  height: 90px;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  align-items: center;
+
+  .nav {
+    width: 300px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+
+    svg {
+      font-size: 30px;
+      padding: 0;
+      margin: 0;
+    }
+  }
+}
+
+a {
+  color: white;
+}
