@@ -23,9 +23,9 @@ import { NavLink} from "react-router-dom";
                <NavLink to='/search' activeStyle={selected}>
                    <ImSearch />
                </NavLink>
-               <NavLink to='/favorite' activeStyle={favorite}>
-                   <ImHeart />
-               </NavLink>
+               {/*<NavLink to='/favorite' activeStyle={favorite}>*/}
+               {/*    <ImHeart />*/}
+               {/*</NavLink>*/}
                <NavLink to='/info' activeStyle={selected}>
                    <ImInfo />
                </NavLink>

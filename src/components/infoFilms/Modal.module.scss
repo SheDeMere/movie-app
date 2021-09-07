@@ -6,12 +6,15 @@
 
   .movieMain {
     display: flex;
+    position: relative;
 
     .poster {
       width: 400px;
       border-radius: 5px;
     }
-
+    .budget {
+      margin-top: 40px;
+    }
     .mainInfo {
       flex: 1;
       padding-left: 50px;
@@ -24,7 +27,17 @@
       }
 
       .genres {
+        font-weight: lighter;
+        display: flex;
 
+        p {
+          margin-right: 25px;
+        }
+      }
+
+      .title {
+        font-weight: lighter;
+        line-height: 35px;
       }
     }
   }
@@ -36,4 +49,36 @@
   height: 60vh;
   width: 100%;
   justify-content: center;
+}
+
+.homePage, .save {
+  height: 30px;
+  background: transparent;
+  border: solid 1px #005fd5;
+  color: white;
+  font-weight: lighter;
+  font-family: 'Roboto', sans-serif;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-right: 20px;
+  transition: 0.3s;
+
+  &:hover {
+    background: #005fd5;
+    color: white;
+    transform: scale(1.1);
+  }
+}
+
+
+.close {
+  position: absolute;
+  right: 0;
+  opacity: 0.9;
+  transition: all 0.5s;
+
+  &:hover {
+    color: red;
+    transform: rotate(90deg);
+  }
 }
