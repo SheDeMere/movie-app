@@ -1,9 +1,10 @@
 import React from 'react';
-import styles from './Popular.module.scss'
-import {Link} from "react-router-dom";
-import { useDispatch } from "react-redux";
+import {useDispatch} from "react-redux";
 import {getModalInfo} from "../../redux/actions/getMovieInfo";
-function Movies({ movie }) {
+import {Link} from "react-router-dom";
+import styles from './Search.module.scss'
+
+function Search({ movie }) {
     const dispatch = useDispatch();
 
     const handleSendData = (id) => {
@@ -26,4 +27,4 @@ function Movies({ movie }) {
     );
 }
 
-export default Movies;
+export default Search;

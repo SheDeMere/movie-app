@@ -1,27 +1,26 @@
-import {searchMovies} from "../actions/searchMovie";
-
 const initialState = {
     movies: [],
     loading: false
 }
+console.log(initialState.movies)
 
- const getMovies = (state = initialState, action) => {
+const getSearchMovie = (state = initialState, action) => {
     switch (action.type) {
-        case 'get/movies/start':
+        case 'search/start':
             return {
                 ...state,
                 loading: true
             }
-
-        case 'get/movies/success':
+        case 'search/success':
             return {
                 ...state,
                 loading: false,
-                movies: action.payload,
+                movies: action.payload
             }
+
         default:
             return state;
     }
 }
 
-export default getMovies;
+export default getSearchMovie;

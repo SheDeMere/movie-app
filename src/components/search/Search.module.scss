@@ -1,0 +1,74 @@
+.searchMain {
+  width: 1000px;
+  margin: auto;
+  justify-content: center;
+  .input {
+    margin: auto;
+    margin-top: 50px;
+    background: #ffffff;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 5px;
+    box-sizing: border-box;
+    height: 45px;
+    width: 310px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    input {
+      background: transparent;
+      border: none;
+      outline: none;
+      font-family: 'Roboto', sans-serif;
+    }
+
+    .rocket {
+      color: #005fd5;
+      cursor: pointer;
+      font-size: 23px;
+    }
+
+    .rocketRed {
+      color: red;
+      cursor: pointer;
+      font-size: 23px;
+    }
+  }
+}
+.moviesMain {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-top: 50px;
+}
+
+
+.card {
+  width: 220px;
+  margin-bottom: 40px;
+  cursor: pointer;
+  transition: 0.3s;
+  &:hover {
+    transform: scale(1.1);
+    box-shadow: 0px 0px 39px rgba(46, 140, 255, 0.25);
+  }
+
+  img {
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+  }
+  .nameMovies {
+    margin-top: -5px;
+    text-align: center;
+    background: #1b1e21;
+    color: white;
+    font-weight: 300;
+    height: 45px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}

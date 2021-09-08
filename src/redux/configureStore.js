@@ -1,6 +1,6 @@
 import {applyMiddleware, combineReducers, createStore} from "redux";
 import {createLogger} from "redux-logger/src";
-import {getMovies, getMoviesInfo} from "./reducers";
+import {getMovies, getMoviesInfo, getSearchMovie} from "./reducers";
 import thunk from "redux-thunk";
 
 const logger = createLogger({
@@ -9,6 +9,10 @@ const logger = createLogger({
 });
 
 export const store = createStore(
-    combineReducers({ getMovies, getMoviesInfo }),
+    combineReducers({
+        getMovies,
+        getMoviesInfo,
+        getSearchMovie
+    }),
     applyMiddleware(logger, thunk)
 );
