@@ -1,13 +1,40 @@
 .saveMain {
   width: 1000px;
-  display: flex;
-  flex-wrap: wrap;
   margin: auto;
-  margin-top: 50px;
-  justify-content: space-between;
+
+  .saveMainItems {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 50px;
+    justify-content: space-between;
+    position: relative;
+    height: 80vh;
+
+    button {
+      position: absolute;
+      color: white;
+      border-radius: 50px;
+      border: none;
+      font-size: 20px;
+      right: -100px;
+      background-color: rgba(255, 0, 0, 0.61);
+      width: 40px;
+      height: 40px;
+      top: 0;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      &:hover {
+        transform: scale(1.1);
+      }
+    }
+  }
 
  .empty {
    margin: auto;
+   margin-top: 50px;
    h1 {
      text-align: center;
      color: white;
