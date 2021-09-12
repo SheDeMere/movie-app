@@ -12,14 +12,20 @@ function Index() {
 
     const dispatch = useDispatch();
 
-    const handleClick = () => {
+    const sendKey = (e) => {
+        if (e.charCode === 13) {
+            dispatch(searchMovies(search))
+            setSearch('')
+        }
+    }
+    const handleClick = (e) => {
         dispatch(searchMovies(search))
         setSearch('')
     }
     return (
         <div className={styles.searchMain}>
             <div className={styles.input}>
-                <input type="text" placeholder={'Форсаж'} value={search} onChange={e => setSearch(e.target.value)}/>
+                <input type="text" placeholder={'Форсаж'} value={search} onChange={e => setSearch(e.target.value)} onKeyPress={event => sendKey(event)}/>
                 <ImRocket className={search.length === 0 ? styles.rocket : styles.rocketRed} onClick={handleClick}/>
             </div>
             <div className={styles.moviesMain}>
