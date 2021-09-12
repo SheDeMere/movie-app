@@ -1,8 +1,9 @@
 import React from 'react';
-import styles from './Popular.module.scss'
-import {Link, } from "react-router-dom";
+import {Link} from "react-router-dom";
+import styles from "./Save.module.scss";
 
-function Movies({ movie }) {
+function Save ({ movie }) {
+
     return (
         <Link to={`films/id/${movie.id}/info`}>
             <div  className={styles.card}>
@@ -19,9 +20,4 @@ function Movies({ movie }) {
     );
 }
 
-
-
-
-
-
-export default Movies;
+export default Save;

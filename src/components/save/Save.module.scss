@@ -1,0 +1,53 @@
+.saveMain {
+  width: 1000px;
+  display: flex;
+  flex-wrap: wrap;
+  margin: auto;
+  margin-top: 50px;
+  justify-content: space-between;
+
+ .empty {
+   margin: auto;
+   h1 {
+     text-align: center;
+     color: white;
+     margin: auto;
+     font-weight: lighter;
+   }
+
+   img {
+     margin-top: 50px;
+     width: 1000px;
+   }
+ }
+}
+
+.card {
+  width: 220px;
+  margin-bottom: 40px;
+  cursor: pointer;
+  transition: 0.3s;
+  &:hover {
+    transform: scale(1.1);
+    box-shadow: 0px 0px 39px rgba(46, 140, 255, 0.25);
+  }
+
+  img {
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+  }
+  .nameMovies {
+    margin-top: -5px;
+    text-align: center;
+    background: #1b1e21;
+    color: white;
+    font-weight: 300;
+    height: 45px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+

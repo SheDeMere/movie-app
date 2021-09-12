@@ -4,16 +4,18 @@ import { ImRocket } from 'react-icons/im'
 import {useDispatch, useSelector} from "react-redux";
 import {searchMovies} from "../../redux/actions/searchMovie";
 import Search from "./Search";
+
 function Index() {
     const [search, setSearch] = useState('');
-    const {movies, loading} = useSelector(state => state.getSearchMovie)
+
+    const { movies } = useSelector(state => state.getSearchMovie)
 
     const dispatch = useDispatch();
+
     const handleClick = () => {
         dispatch(searchMovies(search))
         setSearch('')
     }
-
     return (
         <div className={styles.searchMain}>
             <div className={styles.input}>

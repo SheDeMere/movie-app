@@ -1,6 +1,7 @@
 import React from 'react';
 import styles from './Preloader.module.scss';
 import Loader from "react-loader-spinner";
+
 function Index() {
     return (
             <div className={styles.preloader}>

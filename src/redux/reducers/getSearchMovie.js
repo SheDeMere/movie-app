@@ -2,7 +2,7 @@ const initialState = {
     movies: [],
     loading: false
 }
-console.log(initialState.movies)
+
 
 const getSearchMovie = (state = initialState, action) => {
     switch (action.type) {
